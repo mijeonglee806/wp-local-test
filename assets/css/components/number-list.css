@@ -1,0 +1,10 @@
+/********************************************************************************
+			 --- Components - Number List ---
+*********************************************************************************/
+.numbered-list {counter-reset: number-counter;}
+.numbered-list__panel {position: relative; padding-left: 3.75em; margin-bottom: 2.5em}
+.numbered-list__panel::before {font-size: 1.125em; counter-increment: number-counter; content: counter(number-counter); display: block; position: absolute; top: 0; left: 0; width: 2.3333em; height: 2.3333em; line-height: 2.2222em; border-radius: 2.1111em; text-align: center; border: 1px solid var(--light-gray); font-weight: 700;}
+.numbered-list__headline {margin-bottom: 0.625rem;}
+.numbered-list__headline a {color: var(--text-color); transition: color 250ms ease}
+.numbered-list__headline a:hover {color: var(--primary);}
+.numbered-list__panel p {font-size: 1.1875em}

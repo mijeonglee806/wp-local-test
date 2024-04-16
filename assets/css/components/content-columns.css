@@ -1,0 +1,41 @@
+/********************************************************************************
+			 --- Components - Text Grid Col ---
+*********************************************************************************/
+.text-grid-col__block {margin-bottom: 3.75em;}
+.text-grid-col--2 .text-grid-col__block p {font-size: 1.1875em;}
+.text-grid-col__checkmark {font-size: 1.1875em; padding-left: 1.6842em; position: relative;}
+.text-grid-col__checkmark::before {font-size: 1.1579em; content: "\e94b"; font-family: var(--icon-family); display: block; position: absolute; top: -0.1364em; left: 0; color:var(--secondary); }
+
+@media only screen and (min-width: 480px) and (max-width: 959px) {
+	.text-grid-col--4 .columns:nth-child(2n+1) .text-grid-col__block {transition-delay: 100ms}
+	.text-grid-col--4 .columns:nth-child(2n+2) .text-grid-col__block {transition-delay: 200ms}
+}
+
+@media only screen and (min-width: 640px) {
+	.text-grid-col--2 .text-grid-col__block .text-button {font-size: 1.1875em;}
+	.text-grid-col--2 .columns:nth-child(2n+1) .text-grid-col__block {transition-delay: 100ms}
+	.text-grid-col--2 .columns:nth-child(2n+2) .text-grid-col__block {transition-delay: 200ms}
+}
+
+@media only screen and (min-width: 801px) {
+	.text-grid-col--3 .columns:nth-child(3n+1) .text-grid-col__block {transition-delay: 100ms}
+	.text-grid-col--3 .columns:nth-child(3n+2) .text-grid-col__block {transition-delay: 200ms}
+	.text-grid-col--3 .columns:nth-child(3n+3) .text-grid-col__block {transition-delay: 300ms}
+}
+
+@media only screen and (min-width: 960px) {
+	.text-grid-col--4 .columns:nth-child(4n+1) .text-grid-col__block {transition-delay: 100ms}
+	.text-grid-col--4 .columns:nth-child(4n+2) .text-grid-col__block {transition-delay: 200ms}
+	.text-grid-col--4 .columns:nth-child(4n+3) .text-grid-col__block {transition-delay: 300ms}
+	.text-grid-col--4 .columns:nth-child(4n+4) .text-grid-col__block {transition-delay: 400ms}
+}
+
+@media only screen and (min-width: 1200px) {
+	.text-grid-col--3.row, .text-grid-col--2.row {margin-right: -1.875em; margin-left: -1.875em}
+	.text-grid-col--3.row .columns, .text-grid-col--2.row .columns {padding-right: 1.875em; padding-left: 1.875em;}
+}
+
+@media only screen and (max-width: 800px) {
+	.text-grid-col__block p {font-size: 1.1875em;}
+	.text-grid-col__block {margin-bottom: 2.5em;}
+}

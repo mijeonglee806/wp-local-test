@@ -1,0 +1,22 @@
+/********************************************************************************
+			 --- Hero ---
+*********************************************************************************/
+.hero {position: relative; height: 60em; background-color: var(--primary); }
+.hero__bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: center center; background-repeat: no-repeat; background-size: cover;}
+.hero__bg-video {width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; -o-object-position: center; object-position: center;}
+.hero__body > div > :last-child {margin-bottom: 0}
+.hero__body {width: 100%; text-align: center; color: var(--white);}
+.hero__body, .hero__headline, .hero__subheadline {color: var(--white);}
+.hero__label {display: block;}
+.hero__headline {margin-bottom: 1.25rem}
+.hero__overview {font-size: 1.1875em; color: rgba(var(--white-rgb),0.90)}
+.hero__overview > :last-child {margin-bottom: 0}
+
+@media only screen and (min-width: 480px) {
+	.hero__container {display: flex; align-items: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+}
+
+@media only screen and (max-width: 479px) {
+	.hero__container {position: relative;}
+	.hero__body {padding-top: 8.125em; padding-top: calc(70px + 3.75em); padding-bottom: 4.375em;}
+}

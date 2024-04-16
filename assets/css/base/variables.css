@@ -1,0 +1,45 @@
+:root {
+    /* Colors - Hex Values */
+	--primary: #00098c;
+	--secondary: #6b1cac;
+	--tertiary: #d0a12b;
+	--blue: var(--primary);
+	--purple: var(--secondary);
+	--gold: var(--tertiary);
+    --cherry: #de157d;
+    --orange: #fcb21b;
+    --green:  #81bc00;
+	--dark-gray: #4a4a4a;
+	--gray: #c2c3da;
+	--light-gray: #e8e9f6;
+	--off-white: #f4f5fc;
+	--white: #fff;
+    /* Colors - RGB Values For Passing Colors For Transparency Controls */
+    --primary-rgb: 0, 9, 140;
+	--secondary-rgb: 107, 28, 172;
+	--tertiary-rgb: 208, 161, 43;
+	--blue-rgb: var(--primary-rgb);
+	--purple-rgb: var(--secondary-rgb);
+	--gold-rgb: var(--tertiary-rgb);
+    --cherry-rgb: 222, 21, 125;
+    --orange-rgb: 252, 178, 27;
+    --green-rgb:  129, 188, 0;
+	--dark-gray-rgb: 74, 74, 74;
+	--gray-rgb: 194, 195, 218;
+	--light-gray-rgb: 232, 233, 246;
+	--off-white-rgb: 244, 245, 252;
+	--white-rgb: 255, 255, 255;
+    /* Colors - Typography */
+    --heading-color: var(--primary);
+    --subheading-color: var(--secondary);
+	--text-color: var(--dark-gray);
+    /* Typography */
+    --heading-family: 'Lato',sans-serif;
+    --subheading-family: 'Lato',sans-serif;
+    --body-family: 'Lato',sans-serif;
+    --icon-family: 'Project-Icons';
+    /* Border Radius */
+    --border-radius: 3px;
+
+
+}

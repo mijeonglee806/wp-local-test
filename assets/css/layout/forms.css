@@ -1,0 +1,116 @@
+/********************************************************************************
+			 --- Form Styling ---
+*********************************************************************************/
+/*-----------Standard Forms-----------*/
+form { margin: 0; }
+/*-----------Label Styles-----------*/
+label,
+.root .gform_wrapper.gravity-theme .gfield_label{font-size: 0.875em; text-transform: uppercase; font-weight:700; letter-spacing: 0.54px; color: var(--text-color); cursor: pointer; display: block; margin: 0;}
+.form-label {display: block; margin-bottom: 0.5em}
+/*-----------Required-----------*/
+.req { color:var(--cherry); font-weight: 700;}
+.gform_required_legend {display: none;}
+/*-----------styling on all basic form elements-----------*/
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {font-size: 1.000rem; -webkit-appearance: none; background-color: var(--white); border: 1px solid var(--light-gray); color: var(--text-color); display: block; margin: 0 0 1.25em 0; padding: 0.9375em; height: 3.125em; width: 100%; transition: border linear 0.2s; border-radius: var(--border-radius); font-weight:normal;}
+/*-----------styling on all basic form focus elements-----------*/
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus, select:focus {border-color: var(--primary); outline:none;}
+body.user-is-tabbing input[type="text"]:focus, body.user-is-tabbing input[type="password"]:focus, body.user-is-tabbing input[type="date"]:focus, body.user-is-tabbing input[type="datetime"]:focus, body.user-is-tabbing input[type="datetime-local"]:focus, body.user-is-tabbing input[type="month"]:focus, body.user-is-tabbing input[type="week"]:focus, body.user-is-tabbing input[type="email"]:focus, body.user-is-tabbing input[type="number"]:focus, body.user-is-tabbing input[type="search"]:focus, body.user-is-tabbing input[type="tel"]:focus, body.user-is-tabbing input[type="time"]:focus, body.user-is-tabbing input[type="url"]:focus, body.user-is-tabbing textarea:focus, body.user-is-tabbing select:focus {border: none; outline: auto; outline: 2px solid var(--secondary) !important; /* for non-webkit browsers */ outline: 5px auto -webkit-focus-ring-color !important;}
+/*-----------styling on all basic form disabled elements-----------*/
+input[type="text"][disabled], fieldset[disabled] input[type="text"], input[type="password"][disabled], fieldset[disabled] input[type="password"], input[type="date"][disabled], fieldset[disabled] input[type="date"], input[type="datetime"][disabled], fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled], fieldset[disabled] input[type="datetime-local"], input[type="month"][disabled], fieldset[disabled] input[type="month"], input[type="week"][disabled], fieldset[disabled] input[type="week"], input[type="email"][disabled], fieldset[disabled] input[type="email"], input[type="number"][disabled], fieldset[disabled] input[type="number"], input[type="search"][disabled], fieldset[disabled] input[type="search"], input[type="tel"][disabled], fieldset[disabled] input[type="tel"], input[type="time"][disabled], fieldset[disabled] input[type="time"], input[type="url"][disabled], fieldset[disabled] input[type="url"], textarea[disabled], fieldset[disabled] textarea { background-color: var(--gray); }
+/*-----------input submit-----------*/
+input[type="submit"] { -webkit-appearance: none; }
+/*-----------textarea-----------*/
+textarea { min-height: 6.944em; resize: none; max-width: 100%; }
+textarea[rows] { height: auto; }
+/*-----------select-----------*/
+select { -webkit-appearance: none !important; background-color: var(--white); background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+); background-position: 100% center; background-repeat: no-repeat; line-height: normal; height: 3.125em; }
+:-moz-any(select) {background-image:none;}
+select::-ms-expand {display: none;}
+/*-----------other form elements-----------*/
+input[type="file"], input[type="checkbox"], input[type="radio"] { margin: 0 0 1.000em 0; }
+input[type="checkbox"] + label, input[type="radio"] + label { display: inline-block; margin-left: 0.444em; margin-right: 0.889em; margin-bottom: 0; vertical-align: baseline; }
+.input-radio, .input-checkbox {vertical-align:top; margin:0.444em 0; line-height:1.2;}
+.input-radio input[type="radio"], .input-checkbox input[type="checkbox"] {width:18px; height:18px; margin:0 0.222em 0 0; padding:0;}
+/*-----------place holder color-----------*/
+::-webkit-input-placeholder {color: rgba(var(--dark-gray-rgb), 0.75);}
+::-moz-placeholder {color: rgba(var(--dark-gray-rgb), 0.75)}
+:-ms-input-placeholder {color: rgba(var(--dark-gray-rgb), 0.75)}
+:-moz-placeholder {color: rgba(var(--dark-gray-rgb), 0.75)}
+/*-----------Normalize file input width-----------*/
+input[type="file"] { width: 100%; }
+/*-----------We add basic fieldset styling-----------*/
+fieldset { border: 1px solid var(--light-gray); padding: 1.111em; margin: 1.000em 0; }
+fieldset legend {font-size: 0.875em; text-transform: uppercase; font-weight: 700; background: var(--white); padding: 0 0.167em; margin: 0; margin-left: -0.167em; }
+/*-----------Custom replaced checkbox, radio, switch-----------*/
+.checkbox, .radio, .switch {font-size: 16px; margin: 1.000em 0; }
+.checkbox label, .radio label {font-size: 1em; font-weight: 400; text-transform: none; line-height: 1;}
+.checkbox *, .radio * { cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.checkbox input, .radio input { opacity: 0; margin: 0; }
+.radio span, .checkbox span {margin-left: -0.85em; margin-right:0.125em; vertical-align: middle; position: relative; top: 0.125em;}
+.radio span:before, .checkbox span:before {font-size: 1.25em; font-family: var(--icon-family); color: var(--light-gray); transition: color 250ms ease;}
+.checkbox input[type=checkbox]:checked + span:before, .radio input[type=radio]:checked + span:before {color: var(--primary);}
+.radio input[type=radio]:disabled + span:before, .checkbox input[type=checkbox]:disabled + span:before {color: var(--light-gray);}
+.radio span:before {content: "\e952"; }
+.radio input[type=radio]:checked + span:before {content:"\e951"}
+.checkbox span:before {content: "\e950";}
+.checkbox input[type=checkbox]:checked + span:before {content:"\e94e"}
+/* --- SWITCH --- */
+.switch * { cursor: pointer; }
+.switch input { opacity: 0; position: absolute; z-index: -1; }
+.switch span { position: relative; display: inline-block; width: 58px; height: 30px; background-color: var(--white); border: 1px solid var(--light-gray); border-radius: 100px; transition: all .5s; box-shadow: 1px 2px 3px rgba(var(--dark-gray-rgb),0.1) inset; }
+.switch span:after { content: ""; position: absolute; background-color: var(--light-gray); top: 0; left: 0; height: 28px; width: 28px; border: 1px solid var(--light-gray); border-radius: 400px; box-shadow: 1px 1px 3px rgba(var(--dark-gray-rgb),0.35); -webkit-transition: all .2s; }
+.switch input:checked + span { background-color: var(--primary); border-color: var(--primary); transition: all .5s; }
+.switch input:checked + span:after { left: 50%; transition: all .2s; }
+.switch input:checked + span:after {background-color: var(--secondary); border: 1px solid var(--secondary);}
+/*-----------Error Validation-----------*/
+form small.form-error {font-size: 0.667rem; background: var(--primary); color: var(--white); padding: 0.222rem 0.333rem; font-weight: 500; margin: -2.5rem 0 0.556rem 0; display: block; }
+/*-----------Error Validation-----------*/
+.fv-row__error label {color: var(--primary);}
+.fv-row__error input, .fv-row__error textarea, .fv-row__error select, .fv-row__error input:focus, .fv-row__error textarea:focus, .fv-row__error select:focus {border-color: var(--primary)}
+.form-validation-container {margin: 1.25em 0;}
+.form-validation-message {font-size: 0.875em; line-height: 1.2; background: var(--primary); color: var(--white); padding: 0.375em 0.9375em; margin-bottom: 0.1429em}
+/*-----------Success Container-----------*/
+.form-success-container {margin-top: 3.75em; margin-bottom: 3.75em; display: none; text-align: center;}
+.form-success-container--active {display: block;}
+.form-success-container__icon {margin-bottom: 1.25em; }
+.form-success-container__icon span {font-size: 6em; color: var(--primary)}
+.form-success-container p {font-size: 1.1875em;}
+.form-success-container > :last-child {margin-bottom: 0}
+/*-----------Hide reCaptcha v3-----------*/
+.form-recaptcha-message {font-size: 0.75rem;}
+.grecaptcha-badge {display: none!important; /*Allowed to hide Google reCAPTCHA with text on form*/ }
+/*-----------Articles-----------*/
+.article form {font-size: 0.8em;}
+/*-----------Gravity Forms-----------*/
+.gform_wrapper .gfield_required{color:var(--primary)!important}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {font-size: 1rem!important;}
+.gform_wrapper .gfield:not(.gfield_error).field_sublabel_below .ginput_complex.ginput_container label {font-size: 0.875em!important; margin-top: -1.7857em!important; margin-bottom: 0.7143em!important;}
+.gform_wrapper li.field_sublabel_above .ginput_complex input[type=text] {margin-bottom: 2.5em!important;}
+body .gform_wrapper .top_label div.ginput_container, .gform_wrapper ul li.gfield.field_sublabel_above.field_description_below+li.gfield {margin-top: 0!important}
+.gform_wrapper li.gfield.gfield_error,.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{background:none!important;border:none!important;}
+.gform_wrapper li.gfield.gfield_creditcard_warning{border-top:2px solid var(--primary)!important;border-bottom:4px solid var(--primary)!important;background-color:rgba(var(--dark-gray-rgb),.25)!important}
+.gform_wrapper li.gfield.gfield_creditcard_warning div.gfield_creditcard_warning_message{color:var(--primary)!important}
+.gform_wrapper li.gfield.gfield_creditcard_warning div.gfield_creditcard_warning_message span{border-bottom:1px solid var(--primary)!important}
+.gform_wrapper .gfield_error .gfield_label{color:var(--primary)!important}
+.gform_wrapper div.validation_error{color:var(--primary)!important;border-top:2px solid var(--primary)!important;border-bottom:2px solid var(--primary)!important}
+.gform_wrapper ol.validation_list{color:var(--primary)!important}
+.gform_wrapper ol.validation_list li a{color:var(--primary)!important}
+.gform_wrapper div.gfield_description.validation_error{color:var(--primary)!important}
+.gform_wrapper div.gfield_description {font-size: 1em!important; margin-bottom: 1.25em}
+.gform_wrapper .validation_message{color:var(--primary)!important}
+.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),.gform_wrapper li.gfield_error textarea{border:1px solid #E8832B!important}
+.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,.gform_wrapper li.gfield_error ul.gfield_checkbox,.gform_wrapper li.gfield_error ul.gfield_radio{color:#E8832B!important}
+.gform_wrapper div.charleft.ginput_counter_error{color:var(--primary)!important}
+.gf_submission_limit_message{color:var(--primary)!important}
+.gform_wrapper li.gfield.gfield_error table.gfield_list thead th{color:var(--primary)!important}
+.form_saved_message .form_saved_message_emailform .validation_message{color:var(--primary)!important}
+.gfield_repeater_item .gfield_repeater_cell .gfield_required{color:var(--primary)!important}
+.gform_confirmation_wrapper {font-family: var(--body-family); padding: 0.556em 0.833em; margin-bottom: 1.111em; background-color:var(--primary); color: var(--white);}
+.gform_confirmation_message {line-height:1.2; padding-left:1.333em; position:relative;}
+.gform_confirmation_message:before {content: "\e94c"; font-family: var(--icon-family); color: var(--white); position:absolute; top:0; left:0; }
+.gform_confirmation_message a { color: rgba(var(--white-rgb),1); border-color: rgba(var(--white-rgb),1)!important; }
+.gform_confirmation_message a:hover { color:rgba(var(--white-rgb),0.65); border-color: rgba(var(--white-rgb),0.65)!important; }
+.gform_wrapper ul.gfield_checkbox li label, .gform_wrapper ul.gfield_radio li label {font-size: 0.9375em; font-weight: normal!important; vertical-align: top!important; margin-top: 0.125em!important;}
+.root .gform_wrapper ul.gfield_radio li input[type=radio] {width: 16px!important;}
+.gform_wrapper .gfield_radio li input[type=radio] {width: 16px!important; height: 16px!important;}
+.gform_wrapper ul li.gfield {margin-top: 0 !important;}

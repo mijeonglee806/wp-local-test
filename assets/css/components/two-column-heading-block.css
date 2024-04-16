@@ -1,0 +1,13 @@
+/********************************************************************************
+			 --- Components - Two Column Heading Block ---
+*********************************************************************************/
+.two-col-heading-block__overview {font-size: 1.1875em;}
+
+@media only screen and (min-width: 960px) {
+	.two-col-heading-block__left {float: left; width: 40%;}
+	.two-col-heading-block__right {float: right; width: 52%;}
+}
+
+@media only screen and (max-width: 959px) {
+	.two-col-heading-block {text-align: center;}
+}

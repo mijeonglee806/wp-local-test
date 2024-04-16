@@ -1,0 +1,24 @@
+/*Reduce Root Element (html) Sizing For REMs*/
+@media only screen and (max-width: 1199px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    html {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 13px
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 12px
+    }
+}

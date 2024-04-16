@@ -1,0 +1,30 @@
+/********************************************************************************
+			 --- Components - Icon Block List ---
+*********************************************************************************/
+.block-icon-list .column-block {margin-bottom: 3.75em;}
+.block-icon-list--card {display: flex; flex-wrap: wrap}
+.block-icon-list--card .block-icon {height: 100%;}
+.block-icon {text-align: center; padding: 0 1.5625em;}
+.block-icon--card {background: var(--off-white); border: 1px solid var(--light-gray); padding: 1.5625em;}
+.block-icon__icons {perspective: 1000px; width: 5em; height: 5em; margin: 0 auto 1.25em auto;}
+.block-icon__icon-inner {position: relative; width: 100%; height: 100%; text-align: center; transition-property: transform; transition-duration: 1s; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); transform-style: preserve-3d; perspective: 2500px; will-change: transform;}
+.block-icon__icon {width: 5em; height: 5em; border-radius: 5em; line-height:4.875em; text-align: center; box-shadow: 0 9px 17px 0 rgba(var(--dark-gray-rgb), 0.1);}
+.block-icon__icon span {display: inline-block; vertical-align: middle;}
+.block-icon__icon span::before {font-size: 2.25em; }
+a.block-icon {display: block;}
+a.block-icon:hover .block-icon__icon-front .block-icon__icon {background: var(--primary);}
+.block-icon__image {text-align: center; height: 5em; line-height: 5em; margin-bottom: 1.25em;}
+.block-icon__image img {max-height: 5em; width: auto;}
+.block-icon__title {font-size: 1.5625em}
+.block-icon__overview {font-size: 1.1875em; color: var(--text-color)}
+.block-icon > :last-child {margin-bottom: 0}
+.section--off-white .block-icon__icon {background: var(--white);}
+
+@media only screen and (min-width: 960px) {
+	.block-icon-list.xlarge-up-4 .block-icon__title {font-size: 1.1875em}
+	.block-icon-list.xlarge-up-4 .block-icon__overview {font-size: 1em;}
+}
+
+@media (max-width: 479px) {
+	.block-icon-list .column-block {margin-bottom: 1.875em;}
+}

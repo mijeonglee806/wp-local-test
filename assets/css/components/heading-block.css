@@ -1,0 +1,15 @@
+/********************************************************************************
+			 --- Components - Heading Block ---
+*********************************************************************************/
+.heading-block {text-align: center;}
+.heading-block--left {text-align: left;}
+.heading-block .small-centered > :last-child {margin-bottom: 0}
+.heading-block--divider > .row-site {padding-bottom: 3.75em; margin-bottom: 3.75em; border-bottom: 1px solid var(--light-gray)}
+.heading-block p {font-size: 1.1875em;}
+.heading-block > .row > .row > .column :last-child, .heading-block__overview > :last-child {margin-bottom: 0}
+.heading-block__cta {margin-top: 2.5em;}
+.heading-block__cta a {margin-right: 0.375em; margin-left: 0.375em}
+
+@media only screen and (max-width: 639px) {
+	.heading-block--divider > .row-site {padding-bottom: 2.5em; margin-bottom: 2.5em;}
+}
